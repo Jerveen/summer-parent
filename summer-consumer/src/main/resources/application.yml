@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+dubbo:
+  #服务方名,若需订阅多应用,使用","分割,不推荐使用默认值为 "*",订阅所有应用
+  cloud:
+    subscribed-services: summer-producer
+  protocol:
+    #dubbo协议
+    name: dubbo
+    #dubbo协议端口(-1表示自增端口,从20880开始)
+    port: -1
+  registry:
+    address: nacos://127.0.0.1:8848

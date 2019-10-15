@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: summer-producer
+  main:
+    #SpringBoot2.1需要设定
+    allow-bean-definition-overriding: true
+
+
+  cloud:
+    nacos:
+      #Nacos配置中心地址
+      config:
+        server-addr: 127.0.0.1:8848
+        #Nacos配置文件后缀名,目前支持properties、yaml
+        file-extension: yaml
+      #Nacos注册中心地址
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+        register-enabled: true
