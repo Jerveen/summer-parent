@@ -5,10 +5,10 @@ dubbo:
   scan:
     #dubbo服务扫描基准包
     base-packages: com.vevor.summer.producer.impl
-    protocol:
-      #dubbo协议
-      name: dubbo
-      #dubbo协议端口(-1表示自增端口,从20880开始)
-      port: -1
+  protocol:
+    #dubbo协议
+    name: dubbo
+    #dubbo协议端口(-1表示自增端口,从20880开始)
+    port: -1
   registry:
-    address: nacos://127.0.0.1:8848
+    address: spring-cloud://localhost
